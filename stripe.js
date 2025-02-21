@@ -7,7 +7,7 @@ export class Stripe {
     this.apiKey = apiKey
   }
 
-  async fetch(c, path, opts = {}) {
+  async fetch(path, opts = {}) {
     // -H "Authorization: Bearer {{YOUR_API_KEY}}" \
     // -H "Stripe-Version: 2024-09-30.acacia" \
     let headers = {
@@ -35,11 +35,11 @@ export class Stripe {
       },
     }
     let u = `https://api.stripe.com${path}`
-    console.log(u, opts)
+    // console.log(u, opts)
     let r = await fetch(u, opts)
 
     if (!r.ok) {
-      c.data.logger.log(await r.text())
+      console.log(await r.text())
       throw new Error(`Error with Stripe: ${r.status}`)
     }
     return await r.json()
