@@ -1,0 +1,12 @@
+{
+  "name": "stripe",
+  "version": "0.0.1",
+  "description": "Super tiny Stripe library. ",
+  "homepage": "https://github.com/treeder/stripe",
+  "main": "stripe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
