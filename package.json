@@ -1,6 +1,6 @@
 {
   "name": "stripe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Super tiny Stripe library. ",
   "homepage": "https://github.com/treeder/stripe",
   "main": "stripe.js",
